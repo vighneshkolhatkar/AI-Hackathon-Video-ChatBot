@@ -6,18 +6,20 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 from dotenv import load_dotenv
 load_dotenv()
 import os
-openai.api_key = os.getenv('OPENAI_API_KEY')
+# openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = st.secrets('OPENAI_API_KEY')
 import videoData
 import random
 
 #starter messages prompt
-st.set_page_config(page_title="Video-chatbot- An LLM-powered app")
+st.set_page_config(page_title="TubeGPT- An LLM-powered app")
 
 # Sidebar contents
 with st.sidebar:
     st.title('🤗💬 Interactive AI App to save your time watching all the tutorial videos')
     st.markdown('''
     ## About
+    TubeGPT
     You can interact with me and get to know a lot of stuff based on the videos you provide me to learn from. 
     This app is an LLM-powered chatbot built using:
     - OpenAI GPT models

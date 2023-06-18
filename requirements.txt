@@ -1,0 +1,10 @@
+firebase_admin==6.1.0
+langchain==0.0.203
+openai==0.27.8
+openai_whisper==20230314
+python-dotenv==1.0.0
+pytube==15.0.0
+streamlit==1.23.1
+streamlit_chat==0.0.2.2
+streamlit_extras==0.2.7
+youtube_transcript_api==0.6.1
