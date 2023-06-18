@@ -6,8 +6,8 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 from dotenv import load_dotenv
 load_dotenv()
 import os
-# openai.api_key = os.getenv('OPENAI_API_KEY')
-openai.api_key = st.secrets('OPENAI_API_KEY')
+openai.api_key = st.secrets['OPENAI_API_KEY']
+
 import videoData
 import random
 
